@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Mars</title>
+      <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+          <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body class="animate__animated animate__rotateInDownLeft">
+<header>
+    <img class="planet" src="image/mars2.png">
+    <section class="header-block">
+        <nav>
+            <p class="logo">MARS</p>
+                <div class="links">
+                    <a href="#tariffs" class="link">Тарифы</a>
+                    <a href="#photogallery" class="link">Фотогалерeя</a>
+                    <a href="#send_question" class="link">Задать вопрос</a>
+                </div>
+            <a href="#broning" class="btn">Забронировать</a>
+        </nav>
+        <div class="title-block">
+            <h1 class="title">На <b>Марсе</b> классно</h1>
+            <p class="subtitle">Присоединяйся к команде или собирай свою<br>
+                и отправляйся в лагерь на Красную планету</p>
+        </div>
+    </section>
+    <section class="header-block">
+        <form class="dateForm" id="broning">
+            <h2 class="form-title">Выбери дату и забронируй <b>путешествие</b></h2>
+            <input type="date" placeholder="Дата">
+            <input type="text" placeholder="Имя">
+            <input type="tel" placeholder="Телефон">
+            <a href="" class="btn" onclick="confirm()">Найти тур</a>
+        </form>
+    </section>
+</header>
+<main>
+    <section class="tariffs">
+        <h1 class="block-title">Тарифы</h1>
+        <div class="tariffs-block"  id="tariffs">
+            <div class="tariff">
+                <h3>Эконом</h3>
+                <p>Для тех кому важнее <br> <b>куда</b></p>
+                <p>Вы полетите на многоместном шатле</p>
+                <h3>999$</h3>
+                <img class="half-circle" src="image/half-circle.png">
+            </div>
+             <div class="tariff">
+                <h3>Бизнес</h3>
+                <p>Для тех кому важен <br> <b>комфорт</b></p>
+                <p>Вы полетите на 10-местном<br> шатле</p>
+                <h3>1299$</h3>
+                <img class="half-circle" src="image/half-circle.png">
+            </div>
+            <div class="tariff">
+                <h3>Vip</h3>
+                <p>Для тех кому важно <br> <b>уединение</b></p>
+                <p>Вы полетите на приватном<br> шатле</p>
+                <h3>1899$</h3>
+                <img class="half-circle" src="image/half-circle.png">
+            </div>
+        </div>
+        <a class="btn-date">Выбрать дату</a>
+    </section>
+    <section class="photogallery">
+        <h1 class="block-title">
+            фотогалерея
+        </h1>
+          <!-- Swiper -->
+  <div class="swiper mySwiper"  id="photogallery">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="image/mars1.jpg"></div>
+      <div class="swiper-slide"><img src="image/mars3.jpg"></div>
+      <div class="swiper-slide"><img src="image/mars4.jpg"></div>
+      <div class="swiper-slide"><img src="image/mars5.jpg"></div>
+      <div class="swiper-slide"><img src="image/mars6.jpg"></div>
+      <div class="swiper-slide"><img src="image/mars7.jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+    </section>
+</main>
+<footer>
+    <div class="video-block">
+        <video class="video" src="image/racket.mp4" autoplay loop muted></video>
+    </div>
+    <div class="questions-block" id="send_question">
+        <h1 class="questions-title">Остались вопросы?</h1>
+        <form class="form2">
+            <h2 class="form-subtitle">Напишы нам и мы сможем подобрать оптимальные условия поездки</h2>
+            <input type="text" placeholder="Имя">
+            <input type="tel" placeholder="Телефон">
+            <a href="" class="btn">Полетели</a>
+        </form>
+    </div>
+</footer>
+<script src="script2.js"></script>
+</body>
+</html>
+
+<!--создать якори-->
